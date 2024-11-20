@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply flex min-h-screen w-screen flex-col dark:bg-primary dark:text-default;
+}
+
+main {
+  @apply flex w-full flex-1 flex-col;
+}
+
+section {
+  @apply flex h-full w-full flex-col;
+}
+
+.panel-group {
+  @apply flex flex-col space-y-2 p-2;
+}
+
+.panel-wrapper {
+  @apply flex flex-col  space-y-2 rounded border  p-2 shadow;
+}
+
+.item-display-wrapper {
+  @apply flex overflow-x-scroll  rounded-xl border;
+}
+
+.item-group-wrapper {
+  @apply flex min-h-12 flex-row items-center justify-between space-x-2;
+}
+
+.alerts-wrapper {
+  @apply absolute right-0 top-0 m-3 space-y-2 opacity-50;
+}
+
+.button-base {
+  @apply flex items-stretch justify-center p-0.5 text-center font-medium transition-[color,background-color,border-color,text-decoration-color,fill,stroke,box-shadow] focus:z-10 focus:outline-none;
+}
+
+.text-input-search {
+  @apply border-none pl-10 dark:bg dark:text-base;
+}
+
+.search-suggestion {
+  @apply flex w-full cursor-pointer flex-row items-center justify-start rounded py-2 dark:hover:bg-highlight;
+}
+
+.search-header {
+  @apply text-xs font-semibold dark:text-secondary;
+}
+
+.table-root-base {
+  @apply box-border w-full text-left text-sm dark:text-secondary;
+}
+
+.table-root-shadow {
+  @apply absolute left-0 top-0 -z-10 box-border h-full w-full rounded-lg drop-shadow-md dark:bg-primary;
+}
+
+.table-root-wrapper {
+  @apply relative box-border w-full;
+}
+
+.table-head-base {
+  @apply box-border text-xs uppercase dark:text-secondary;
+}
+.table-head-cell-base {
+  @apply box-border px-6 py-3 group-first/head:first:rounded-tl-lg group-first/head:last:rounded-tr-lg dark:bg-secondary;
+}
+
+.table-head-cell-first {
+  @apply box-border;
+}
+
+.table-head-cell-last {
+  @apply box-border;
+}
+
+.table-body-base {
+  @apply box-border;
+}
+
+.table-body-cell-base {
+  @apply box-border text-nowrap px-6 py-4 group-first/body:group-first/row:first:rounded-tl-lg group-first/body:group-first/row:last:rounded-tr-lg group-last/body:group-last/row:first:rounded-bl-lg group-last/body:group-last/row:last:rounded-br-lg;
+}
+
+.table-body-cell-index {
+  @apply box-border overflow-hidden text-ellipsis whitespace-nowrap font-medium dark:text-default;
+}
+
+.table-body-cell-date {
+  @apply box-border text-sm;
+}
+
+.table-row-base {
+  @apply box-border border-y text-sm dark:border-default;
+}
+
+.checkbox-root-base {
+  @apply h-4 w-4 rounded border focus:ring-2 dark:border-default dark:bg-primary;
+}
+
+.checkbox-root-color-default {
+  @apply stroke-info  dark:ring-offset-zinc-800 dark:focus:ring-zinc-800;
+}
+
+.navbar-root-base {
+  @apply px-2 py-2.5 dark:border-none dark:bg-primary;
+}
+
+.button-color-zinc {
+  @apply shadow dark:bg-secondary dark:text-secondary dark:hover:bg-highlight;
+}
+
+.button-color-none {
+  @apply dark:text-secondary;
+}
+
+.button-color-minimal {
+  @apply dark:text-secondary dark:hover:bg-secondary;
+}
+
+.button-color-blue {
+  @apply dark:bg-blue-secondary dark:hover:bg-blue-primary shadow;
+}
+
+.button-color-emerald {
+  @apply dark:bg-emerald-secondary dark:hover:bg-emerald-primary shadow;
+}
+
+.button-color-red {
+  @apply dark:bg-red-secondary dark:hover:bg-red-primary shadow;
+}
+
+.button-color-yellow {
+  @apply dark:bg-yellow-secondary dark:hover:bg-yellow-primary shadow;
+}
+
+.spinner-base {
+  @apply inline size-5 animate-spin dark:fill-zinc-600  dark:text-secondary;
+}
